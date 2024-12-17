@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pickle
 import nltk
@@ -8,10 +9,14 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # تحميل النموذج والـ Vectorizer
-with open('C:\\Users\\Ahmed\\model.pkl', 'rb') as model_file:
+import os
+
+# تحميل النموذج
+with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open('C:\\Users\\Ahmed\\vectorizer.pkl', 'rb') as vectorizer_file:
+# تحميل الـ vectorizer
+with open('vectorizer.pkl', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
 st.title("Email Classifier (Spam/Ham)")
