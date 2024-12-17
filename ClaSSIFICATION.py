@@ -3,8 +3,8 @@ import pickle
 import nltk
 nltk.download('punkt')
 #nltk.download()
-#from nltk.corpus import brown
-#brown.words()
+from nltk.corpus import brown
+brown.words()
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 # تحميل بيانات NLTK
