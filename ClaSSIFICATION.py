@@ -46,7 +46,6 @@ if input_sms and Bu:
 
     # التنبؤ باستخدام النموذج
     result = model.predict(vector_input)[0]
-
     # عرض النتيجة
     if result == 1:
         #st.header("Spam")
