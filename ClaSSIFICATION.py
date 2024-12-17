@@ -1,3 +1,17 @@
+import nltk
+import os
+
+# تحديد مسار محلي لمجلد nltk_data
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+if not os.path.exists(nltk_data_path):
+    os.makedirs(nltk_data_path)
+
+# إضافة المسار إلى قائمة مسارات NLTK
+nltk.data.path.append(nltk_data_path)
+
+# تحميل punkt إلى هذا المسار
+nltk.download('punkt', download_dir=nltk_data_path)
+
 import streamlit as st
 import pickle
 import nltk
