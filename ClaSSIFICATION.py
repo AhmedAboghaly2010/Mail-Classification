@@ -2,12 +2,14 @@ import streamlit as st
 import pickle
 import nltk
 nltk.download('punkt')
+#nltk.download()
+#from nltk.corpus import brown
+#brown.words()
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-
 # تحميل بيانات NLTK
 nltk.download('stopwords')
-nltk.download('punkt')
+
 
 # تحميل النموذج والـ vectorizer
 try:
