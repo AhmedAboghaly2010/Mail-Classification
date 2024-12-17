@@ -12,8 +12,10 @@ nltk.download('punkt')
 import os
 
 # تحميل النموذج
-with open('model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+print("Model loaded successfully!")
 
 # تحميل الـ vectorizer
 with open('vectorizer.pkl', 'rb') as vectorizer_file:
